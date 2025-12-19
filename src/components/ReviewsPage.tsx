@@ -18,9 +18,9 @@ export default function ReviewsPage({ onSubmitReview }: ReviewsPageProps) {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-3">Investor Reviews</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-3">Business Reviews</h1>
               <p className="text-slate-300 text-lg max-w-2xl">
-                Authentic feedback from investors, partners, and business leaders on real partnership experiences.
+                Authentic feedback from partners, clients, and industry professionals on real business experiences.
               </p>
             </div>
             <button
