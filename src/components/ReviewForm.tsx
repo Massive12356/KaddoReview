@@ -10,7 +10,7 @@ import Step4ValueCreation from './steps/Step4ValueCreation';
 import Step5ScalabilityTrust from './steps/Step5ScalabilityTrust';
 import Step6Endorsement from './steps/Step6Endorsement';
 import Step7StarRatings from './steps/Step7StarRatings';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 
 const STEPS = [
   { number: 1, title: 'Reviewer Info' },
@@ -150,6 +150,14 @@ export default function ReviewForm({ onSuccess }: ReviewFormProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-4">
       <div className="max-w-4xl mx-auto">
+        <button
+          onClick={onSuccess}
+          className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-4 transition-colors"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          Back to Reviews
+        </button>
+        
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Business Review Submission</h1>
           <p className="text-gray-600">Share your experience with investors and business leaders</p>
